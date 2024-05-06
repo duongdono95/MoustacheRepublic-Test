@@ -1,0 +1,112 @@
+:root {
+  --secondary: rgba(108, 108, 108);
+  --success: rgba(11, 171, 5);
+  --error: rgba(216, 0, 0);
+  --warning: rgba(255, 140, 0);
+  --info: rgba(22, 163, 187);
+  --custom-code: 0, 0, 0;
+
+  --font-family: "Montserrat", sans-serif;
+  --primary-code: 235, 104, 81;
+  --primary: rgba(235, 104, 81);
+  --primary09: rgba(235, 104, 81, 0.9);
+  --primary08: rgba(235, 104, 81, 0.8);
+  --primary07: rgba(235, 104, 81, 0.7);
+  --primary06: rgba(235, 104, 81, 0.6);
+  --primary05: rgba(235, 104, 81, 0.5);
+  --primary04: rgba(235, 104, 81, 0.4);
+  --primary03: rgba(235, 104, 81, 0.3);
+  --primary02: rgba(235, 104, 81, 0.2);
+  --primary01: rgba(235, 104, 81, 0.1);
+  --primary-strong: rgb(226, 88, 63);
+
+  --black: rgba(0, 0, 0, 1);
+  --black09: rgba(0, 0, 0, 0.9);
+  --black08: rgba(0, 0, 0, 0.8);
+  --black07: rgba(0, 0, 0, 0.7);
+  --black06: rgba(0, 0, 0, 0.6);
+  --black05: rgba(0, 0, 0, 0.5);
+  --black04: rgba(0, 0, 0, 0.4);
+  --black03: rgba(0, 0, 0, 0.3);
+  --black02: rgba(0, 0, 0, 0.2);
+  --black01: rgba(0, 0, 0, 0.1);
+  --black005: rgba(0, 0, 0, 0.05);
+
+  --white: rgba(255, 255, 255, 1);
+  --white09: rgba(255, 255, 255, 0.9);
+  --white08: rgba(255, 255, 255, 0.8);
+  --white07: rgba(255, 255, 255, 0.7);
+  --white06: rgba(255, 255, 255, 0.6);
+  --white05: rgba(255, 255, 255, 0.5);
+  --white04: rgba(255, 255, 255, 0.4);
+  --white03: rgba(255, 255, 255, 0.3);
+  --white02: rgba(255, 255, 255, 0.2);
+  --white01: rgba(255, 255, 255, 0.1);
+  --white005: rgba(255, 255, 255, 0.05);
+
+  --text-color: rgba(51, 51, 51);
+  --default-layout-width: 1150px;
+  --text-dark: #222222;
+  --text-light: #888888;
+  --required-star: #c90000;
+  --light-grey: #cccccc;
+  --dark-grey: #222222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 500;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  color: var(--text-dark);
+  overflow-y: overlay;
+}
+
+// Scrollbar CSS -----------------------------------
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+// -----------------------------------
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.animated-rotation {
+  animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
+}
