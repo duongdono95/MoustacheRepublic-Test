@@ -1,11 +1,11 @@
-import React, { ReactNode } from "react";
-import "./GlobalStyles.scss";
 import {
   QueryClient,
   QueryClientProvider,
 } from "@tanstack/react-query";
-import "react-toastify/dist/ReactToastify.css";
+import { ReactNode } from "react";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./GlobalStyles.scss";
 interface Props {
   children: ReactNode;
 }
